@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Tree
 {
-    int count = 0;
     Node root;
     public Tree()
     {
@@ -12,13 +11,12 @@ public class Tree
     {
         if (node == null)
             return;
-        printInorder(node.left, id);
-        count++;
+        printInorder(node.left, id); // Traverse the left node recursively
         if(node.data > id){
-            System.out.println(node.data + " ");
-            System.out.println(node.name + " ");
+            System.out.println(node.data);
+            System.out.println(node.name);
         }
-        printInorder(node.right, id);
+        printInorder(node.right, id); // Traverse the right node recursively
     }
 
     public void printInorder(int id){
@@ -34,7 +32,7 @@ public class Tree
         tree.root.left = new Node(1, "Admin", 1); // User 4
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the userId to check for subordinates : ");
+        System.out.println("Enter the userId to check for subordinates : "); // Get the user input for the user ID
         int idValue = scanner.nextInt();
         System.out.print("\n");
         if(idValue != 4)

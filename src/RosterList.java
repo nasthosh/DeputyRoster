@@ -30,7 +30,7 @@ public class RosterList {
                     rosterData.add(newRoster3);
                 }
                 else
-                    System.out.println("New Start time is lesser than the old end time");
+                    System.out.println("New Start time is lesser than the old end time, so it will overlap");
             else
                 System.out.println("Employee ID is different");
         else

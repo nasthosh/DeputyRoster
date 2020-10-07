@@ -7,6 +7,6 @@ public class Roster {
     private int department;
     private Date startTime;
     private Date endTime;
-    
+
 
 }
